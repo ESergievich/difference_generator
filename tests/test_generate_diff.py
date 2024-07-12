@@ -5,16 +5,19 @@ from hexlet_code.gendiff import generate_diff
 
 
 @pytest.fixture
-def test_files():
-    def get_file_path(filename):
-        return os.path.join(os.path.dirname(__file__), 'fixtures', filename)
+def test_files(request):
+    ext = request.param
 
-    file_path1 = get_file_path('file1.json')
-    file_path2 = get_file_path('file2.json')
-    diff_file = get_file_path('diff_file')
+    def get_file_path(file_path):
+        return os.path.join(os.path.dirname(__file__), 'fixtures', file_path)
+
+    file_path1 = get_file_path(f'file1.{ext}')
+    file_path2 = get_file_path(f'file2.{ext}')
+    diff_file = get_file_path(f'diff_file_{ext}')
     return file_path1, file_path2, diff_file
 
 
+@pytest.mark.parametrize('test_files', ['json', 'yaml'], indirect=True)
 def test_generate_diff(test_files):
     file_path1, file_path2, diff_file = test_files
 

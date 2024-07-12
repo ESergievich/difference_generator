@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+from hexlet_code.gendiff import generate_diff
 
 
 def cli_gendiff():
@@ -10,7 +11,8 @@ def cli_gendiff():
     parser.add_argument('-f', '--format', default='FORMAT', help='set format of output')
 
     args = parser.parse_args()
-    bool(args)
+    result = generate_diff(args.first_file, args.second_file)
+    print(result)
 
 
 def main():

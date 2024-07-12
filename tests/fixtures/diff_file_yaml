@@ -1,0 +1,6 @@
+{
+  - action: attack (miss)
+  + action: attack (hit)
+  - player: playerOne
+  + player: playerTwo
+}

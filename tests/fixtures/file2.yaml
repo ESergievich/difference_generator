@@ -1,2 +1,18 @@
-player: playerTwo
-action: attack (hit)
+person:
+  name: Jane Smith
+  age: 28
+  contacts:
+    email: janesmith@example.com
+    phone: 
+      home: 555-555-5557
+      work: 555-555-5558
+  hobbies:
+    - reading
+    - hiking
+  education:
+    high_school:
+      name: Othertown High School
+    university:
+      name: State University
+      graduation_year: 2014
+      degree: Bachelor of Science in Computer Science

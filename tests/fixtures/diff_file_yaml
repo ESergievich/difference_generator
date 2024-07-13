@@ -1,6 +1,34 @@
 {
-  - action: attack (miss)
-  + action: attack (hit)
-  - player: playerOne
-  + player: playerTwo
+    person: {
+      - address: {
+            street: 123 Main St
+            city: Anytown
+            state: CA
+            postal_code: 12345
+        }
+      + age: 28
+      + contacts: {
+            email: janesmith@example.com
+            phone: {
+                home: 555-555-5557
+                work: 555-555-5558
+            }
+        }
+        education: {
+            high_school: {
+              - graduation_year: 2010
+              - name: Anytown High School
+              + name: Othertown High School
+            }
+            university: {
+              + degree: Bachelor of Science in Computer Science
+                graduation_year: 2014
+                name: State University
+            }
+        }
+      - hobbies: ['reading', 'hiking', 'coding']
+      + hobbies: ['reading', 'hiking']
+      - name: John Doe
+      + name: Jane Smith
+    }
 }

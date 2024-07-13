@@ -1,2 +1,18 @@
-player: playerOne
-action: attack (miss)
+person:
+  name: John Doe
+  address:
+    street: 123 Main St
+    city: Anytown
+    state: CA
+    postal_code: 12345
+  hobbies:
+    - reading
+    - hiking
+    - coding
+  education:
+    high_school:
+      name: Anytown High School
+      graduation_year: 2010
+    university:
+      name: State University
+      graduation_year: 2014

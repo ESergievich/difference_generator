@@ -22,16 +22,21 @@ def test_diff_file(request):
 
 
 @pytest.mark.parametrize('test_files,test_diff_file',
-                         [('json', 'json'), ('yaml', 'yaml'), ('json', 'json_plain'), ('yaml', 'yaml_plain')],
+                         [('json', 'json'), ('yaml', 'yaml'), ('json', 'json_fplain'),
+                          ('yaml', 'yaml_fplain'), ('json', 'json_fjson')],
                          indirect=True)
 def test_generate_diff(test_files, test_diff_file):
     file_path1, file_path2, in_ext = test_files
     diff_file, exp_ext = test_diff_file
+    exp_ext = exp_ext.split('_')[-1]
 
     with open(diff_file, 'r') as diff_f:
-        expected_diff = diff_f.read()
+        expected_file = diff_f.read()
 
-    if exp_ext.split('_')[-1] == 'plain':
-        assert expected_diff == generate_diff(file_path1, file_path2, 'plain')
-    else:
-        assert expected_diff == generate_diff(file_path1, file_path2)
+    received_files = {
+        'fplain': generate_diff(file_path1, file_path2, 'plain'),
+        'fjson': generate_diff(file_path1, file_path2, 'json')
+    }
+    received_file = received_files.get(exp_ext, generate_diff(file_path1, file_path2))
+
+    assert expected_file == received_file

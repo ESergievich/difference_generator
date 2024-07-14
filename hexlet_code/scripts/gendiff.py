@@ -1,22 +1,12 @@
 #!/usr/bin/env python3
 
-import argparse
-from hexlet_code.gendiff import generate_diff
-
-
-def cli_gendiff():
-    parser = argparse.ArgumentParser(description='Compares two configuration files and shows a difference.')
-    parser.add_argument('first_file')
-    parser.add_argument('second_file')
-    parser.add_argument('-f', '--format', default='FORMAT', help='set format of output')
-
-    args = parser.parse_args()
-    result = generate_diff(args.first_file, args.second_file)
-    print(result)
+from hexlet_code.generate_diff import generate_diff
+from hexlet_code.cli import cli_gendiff
 
 
 def main():
-    cli_gendiff()
+    args = cli_gendiff()
+    print(generate_diff(args.first_file, args.second_file, format_out=args.format))
 
 
 if __name__ == '__main__':

@@ -2,7 +2,7 @@ Property 'person.address' was removed
 Property 'person.age' was added with value: 28
 Property 'person.contacts' was added with value: [complex value]
 Property 'person.education.high_school.graduation_year' was removed
-Property 'person.education.high_school.name' was updated. From Anytown High School to Othertown High School
-Property 'person.education.university.degree' was added with value: Bachelor of Science in Computer Science
-Property 'person.hobbies' was updated. From ['reading', 'hiking', 'coding'] to ['reading', 'hiking']
-Property 'person.name' was updated. From John Doe to Jane Smith
+Property 'person.education.high_school.name' was updated. From 'Anytown High School' to 'Othertown High School'
+Property 'person.education.university.degree' was added with value: 'Bachelor of Science in Computer Science'
+Property 'person.hobbies' was updated. From '['reading', 'hiking', 'coding']' to '['reading', 'hiking']'
+Property 'person.name' was updated. From 'John Doe' to 'Jane Smith'

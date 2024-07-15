@@ -4,7 +4,7 @@ from .encoder import encoder
 def plain_value(value):
     if isinstance(value, dict):
         return '[complex value]'
-    return encoder(value)
+    return encoder(value, 'plain')
 
 
 def plain_format(diff_file):

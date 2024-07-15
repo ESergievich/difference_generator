@@ -11,7 +11,7 @@ def stylish_value(value, depth):
         s = itertools.chain('{', string, '\n', ['    ' * depth, '}'])
         return ''.join(s)
     else:
-        return encoder(value)
+        return encoder(value, 'stylish')
 
 
 def build_string(dictionary, key, depth, sign='  '):

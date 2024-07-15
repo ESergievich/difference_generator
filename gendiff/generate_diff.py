@@ -1,6 +1,6 @@
-from hexlet_code.file_extension import deserialize
-from hexlet_code.diff import diff
-from hexlet_code.formats.get_format import get_format
+from gendiff.file_extension import deserialize
+from gendiff.diff import diff
+from gendiff.formats.get_format import get_format
 
 
 def generate_diff(file_path1, file_path2, format_out='stylish'):

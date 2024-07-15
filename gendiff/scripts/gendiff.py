@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-from hexlet_code.generate_diff import generate_diff
-from hexlet_code.cli import cli_gendiff
+from gendiff.generate_diff import generate_diff
+from gendiff.cli import cli_gendiff
 
 
 def main():

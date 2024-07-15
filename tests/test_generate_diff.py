@@ -1,6 +1,6 @@
 import pytest
 import os
-from hexlet_code.generate_diff import generate_diff
+from gendiff.generate_diff import generate_diff
 
 
 def get_file_path(file_path):

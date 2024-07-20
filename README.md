@@ -24,11 +24,10 @@ Run the following commands in the shell:
 ```commandline
 # To begin working with the package, it's necessary to replicate the repository on your local machine.
 # This is accomplished by utilizing the git clone command. Execute this command in the terminal to clone the project:
-# Replace [repository URL] with the actual URL of the repository you wish to clone.
->> git clone [repository URL]
+>> git clone [[repository URL]](https://github.com/ESergievich/python-project-50.git)
 
 # The next step is to navigate to the directory and proceed with the package installation.
->> cd hexlet-code
+>> cd python-project-50
 >> make build
 >> make package-install
 ```

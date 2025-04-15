@@ -24,10 +24,10 @@ Run the following commands in the shell:
 ```commandline
 # To begin working with the package, it's necessary to replicate the repository on your local machine.
 # This is accomplished by utilizing the git clone command. Execute this command in the terminal to clone the project:
->> git clone [[repository URL]](https://github.com/ESergievich/python-project-50.git)
+>> git clone [[repository URL]](https://github.com/ESergievich/difference_generator.git)
 
 # The next step is to navigate to the directory and proceed with the package installation.
->> cd python-project-50
+>> cd difference_generator
 >> make build
 >> make package-install
 ```

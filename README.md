@@ -6,10 +6,10 @@ the `gendiff` utility. The comparison result can be output in plain or JSON form
 dependency and used in your code. The library provides the `gendiff` module with the `generate_diff()` function, which
 returns a string with the difference between the contents of the two files.
 
-[![Actions Status](https://github.com/ESergievich/python-project-50/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ESergievich/python-project-50/actions)
-[![Actions Status](https://github.com/ESergievich/python-project-50/actions/workflows/pyci.yaml/badge.svg)](https://github.com/ESergievich/python-project-50/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/2b62cb75ca0b350a0273/maintainability)](https://codeclimate.com/github/ESergievich/python-project-50/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/2b62cb75ca0b350a0273/test_coverage)](https://codeclimate.com/github/ESergievich/python-project-50/test_coverage)
+[![Actions Status](https://github.com/ESergievich/difference_generator/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ESergievich/difference_generator/actions)
+[![Actions Status](https://github.com/ESergievich/difference_generator/actions/workflows/pyci.yaml/badge.svg)](https://github.com/ESergievich/difference_generator/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2b62cb75ca0b350a0273/maintainability)](https://codeclimate.com/github/ESergievich/difference_generator/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/2b62cb75ca0b350a0273/test_coverage)](https://codeclimate.com/github/ESergievich/difference_generator/test_coverage)
 
 ## Dependencies
 List of dependencies, without which the project code will not work correctly:
